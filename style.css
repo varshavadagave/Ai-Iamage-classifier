@@ -1,0 +1,15 @@
+body { font-family: Arial, sans-serif; background: #f2f4f8; margin: 0; color: #222; }
+main { max-width: 700px; margin: 0 auto; padding: 20px; }
+h1 { text-align: center; }
+.note { text-align: center; color: #555; }
+.card, .result { background: #fff; border-radius: 8px; padding: 16px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.15); }
+button { background: #2f6fed; color: #fff; border: none; padding: 9px 14px; border-radius: 6px; cursor: pointer; margin: 4px 4px 4px 0; }
+button:disabled { background: #999; cursor: not-allowed; }
+#resetBtn, #closeCameraBtn { background: #c0392b; }
+img, video { max-width: 100%; max-height: 300px; display: block; margin: 10px 0; border-radius: 6px; }
+#message { font-weight: bold; }
+.error { color: #c0392b; }
+.result { display: flex; gap: 14px; align-items: center; }
+.result img { width: 120px; height: 120px; object-fit: cover; margin: 0; }
+.bar { background: #ddd; border-radius: 4px; height: 10px; width: 200px; }
+.bar div { background: #2f6fed; height: 100%; border-radius: 4px; }

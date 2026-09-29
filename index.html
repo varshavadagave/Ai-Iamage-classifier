@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Image Classifier</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>AI Image Classifier</h1>
+    <p class="note">Upload or capture an image and the AI will guess what it is. Predictions can be wrong.</p>
+
+    <!-- Step 1: choose an image -->
+    <section class="card">
+      <input type="file" id="fileInput" accept="image/*" hidden />
+      <button id="uploadBtn">Choose Image</button>
+      <button id="cameraBtn">Use Camera</button>
+
+      <!-- Camera panel (hidden until needed) -->
+      <div id="cameraBox" hidden>
+        <video id="video" autoplay playsinline></video>
+        <button id="captureBtn">Capture Photo</button>
+        <button id="closeCameraBtn">Close Camera</button>
+      </div>
+      <canvas id="canvas" hidden></canvas>
+
+      <!-- Preview -->
+      <div id="previewBox" hidden>
+        <img id="preview" alt="Selected image preview" />
+        <div>
+          <button id="classifyBtn">Classify Image</button>
+          <button id="resetBtn">Remove Image</button>
+        </div>
+      </div>
+
+      <p id="message"></p>
+    </section>
+
+    <!-- Step 2: results -->
+    <h2>Results</h2>
+    <p id="emptyText">No images tested yet.</p>
+    <section id="results"></section>
+  </main>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
